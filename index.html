@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>زمین بازی لینوکس</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader"></div>
+  <main class="content hidden">
+    <h1>🌐 زمین بازی Linux</h1>
+
+    <section>
+      <h2>🔹 سیستم‌عامل‌ها: Linux، Unix، iOS</h2>
+      <p>
+        لینوکس یک سیستم‌عامل آزاد و متن‌باز است که بر پایه یونیکس طراحی شده است. یونیکس، پایه‌گذار بسیاری از مفاهیم سیستم‌عامل مدرن است.  
+        iOS سیستم‌عاملی است که اپل برای دستگاه‌های موبایل خودش توسعه داده و از پایه‌های یونیکس بهره می‌برد.
+      </p>
+    </section>
+
+    <section>
+      <h2>💾 سرور چیست؟</h2>
+      <p>
+        سرور یک سیستم کامپیوتری است که خدماتی مانند ذخیره‌سازی، ارسال داده، اجرای نرم‌افزار و مدیریت پایگاه‌داده را به سایر کامپیوترها ارائه می‌دهد.
+        لینوکس معمولاً سیستم‌عامل اصلی در اکثر سرورهاست.
+      </p>
+    </section>
+
+    <section>
+      <h2>📦 توزیع‌های معروف لینوکس</h2>
+      <ul>
+        <li>Ubuntu</li>
+        <li>Debian</li>
+        <li>Arch Linux</li>
+        <li>Fedora</li>
+        <li>Kali Linux (برای تست نفوذ)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💻 دستورات کاربردی لینوکس</h2>
+      <ul>
+        <li><code>ls</code> → نمایش لیست فایل‌ها</li>
+        <li><code>cd</code> → تغییر مسیر</li>
+        <li><code>mkdir</code> → ساخت پوشه</li>
+        <li><code>rm</code> → حذف فایل/پوشه</li>
+        <li><code>chmod</code> → تغییر سطح دسترسی</li>
+        <li><code>sudo</code> → اجرای دستور با دسترسی ادمین</li>
+        <li><code>apt update && apt upgrade</code> → بروزرسانی</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    window.onload = () => {
+      const loader = document.getElementById('loader');
+      const content = document.querySelector('.content');
+      setTimeout(() => {
+        loader.style.display = 'none';
+        content.classList.remove('hidden');
+      }, 2000); // نمایش اولیه ۲ ثانیه‌ای
+    };
+  </script>
+</body>
+</html>
